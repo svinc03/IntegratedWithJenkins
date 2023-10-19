@@ -1,0 +1,208 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="869.6,2012" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="793.6,1947.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="731.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Login.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Test_for_build [Jenkins]" sap:VirtualizedContainerService.HintSize="731.2,1528" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsCVEnabled="False" ScopeGuid="1b886f65-ceff-45eb-8465-cf669ac831b8" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="697.6,1311.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="DT_Build" />
+              <Variable x:TypeArguments="x:String" Name="SerialNumber" />
+              <Variable x:TypeArguments="x:String" Name="Build" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="635.2,740" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="601.6,653.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="539.2,541.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="Build Details.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="505.6,272" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;B2&quot;)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="443.2,160" sap2010:WorkflowViewState.IdRef="ReadCellValueX_1">
+                              <ueab:ReadCellValueX.SaveTo>
+                                <OutArgument x:TypeArguments="x:String">[Build]</OutArgument>
+                              </ueab:ReadCellValueX.SaveTo>
+                            </ueab:ReadCellValueX>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+            </ueab:ExcelProcessScopeX>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Build with Parameters'" sap:VirtualizedContainerService.HintSize="635.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1b886f65-ceff-45eb-8465-cf669ac831b8" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://localhost:8080/me/my-views/view/all/job/Test_for_build/" CvTextArea="90, 297, 179, 17" CvTextArgument="Build with Parameters" CvType="Text" DesignTimeRectangle="90, 297, 179, 17" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Build with Parameters'" Guid="35c2dfbd-12a1-43b2-9fc0-e05103fd1e6d" InformativeScreenshot="9187ad7eb762b90c4f2c70998b7d247d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Test_for_build [Jenkins]' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="47, 291, 29, 30" CvType="ArrowButton" DesignTimeRectangle="49, 293, 28, 28" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl idx='4' parentid='tasks' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='tasks' tag='svg' class='icon-clock icon-md' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHZSURBVFhH7ZXPSwJBFMf7I7xqhBdDuiiCByNSEqFIA6EfSEgZBEJgFEiEQWQQSRhIEEIh0cmDUBIJCYGSJR01K6RDYQdLNOwkwot5zHbS1dURL37gsc77vsGPLjvbB12mJ9ATaChQLv9idQpegXg8AVLpEJbXewSVSoUm7OAVWFvbAJGoH1ZW1vGq1Y5DMBiiKRt4BYzGafxiQjh8DXr9JK7n55cgkXjAfrs0LcDh8RyCRDKIfadzC97fP2jSGoIFCM/Pr2Cz2TGTy1Xg8x1DtVqlqTBaEuAIhS5BoxnDGXJ7yFoobQlwuN37OEfKal2GZPKRJo1hIkDIZt/AYln8F9nc3IZc7pOm9WEmwHFxcQVK5TDu0+kmaLc+zAU49vYOcG86naGd2nRE4OTk7P9Rzee/aLc2TAXu75NgMJhwz8CAHP+FRjARKJV+wOFw4iwpcnRnMi805adtAb//FGQyBc6ZzRaIRm9p0hwtC8RidzA1NYu5Wj0KgcA5TYQhWKBQKOA7gPTFYhns7nqgWCzRVDiCBMivVCg02LPbVyGVeqJJ6zQlQI7WubkF/GwyzUAkckMn2odXgDtMSKlUI/h8s4ZXgOBy7WB9fxdohy0NBTpNT6An0GUBgD8UQf4gdFZdigAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Enter the build number'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="635.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="1b886f65-ceff-45eb-8465-cf669ac831b8" Text="[Build + &quot;[k(Enter)]&quot;]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://localhost:8080/me/my-views/view/all/job/Test_for_build/build?delay=0sec" CvElementArea="470, 531, 1239, 50" CvType="InputBox" DesignTimeRectangle="474, 534, 1234, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='jenkins-input   ' aaname='' /&gt;" Guid="92524413-5a29-4132-b054-df7f476faaaa" InformativeScreenshot="5ddec1a142dd6c7d30963a06d47aa7bf.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="473, 500, 180, 17" CvTextArgument="Enter the build number" CvType="Text" DesignTimeRectangle="474, 495, 1234, 29" ElementType="Text" FriendlyName="'Enter the build number'" FullSelectorArgument="&lt;webctrl class='jenkins-form-description' parentid='main-panel' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='jenkins-form-description' parentid='main-panel' tag='DIV' type='' aaname='Enter the build number' check:innerText='Enter the build number' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABNYAAAAhCAYAAAAVrSYNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAUUSURBVHhe7dwhb1xHFAbQ/uewoLCQKlJRiVHDIpWkzKRSQECkEpfFqOWRilLo6tvmVtfjmfXzk3dlV+dIq919OzP3zrxFn7z+7gYAAAAAeDDBGgAAAADsIFgDAAAAgB0EawAAAACwg2ANAAAAAHYQrAEAAADADoI1AAAAANhBsAYAAAAAOwjWAAAAAGAHwRoAAAAA7PC/DdYuLn4+PE7hy5e/bl69+vHm06ffv115fO/f/3qokVrHVC8Z/xxcX/9x6DfPAAAAAM/ZrWAtQdGLF9/febx8+cOzC0KeW7CWXt+8+enm69e/D+8FawAAAABP251g7bFCtHMFKKs6grWn6VzfCwAAAIBTE6ztcIpgbSRYAwAAAHjaBGs7CNb2O9f3AgAAAODUHhysVWCVMRlb/4etgp38lDE/aez/o61/HuPc/hPIqBrpJ5/PAqb76tzXZ5drszVWerB2bO4q9Kre01/J6y0/Bc24Xu/y8uO0RpczyJg89/nj+qua4/ci49Lr1dXnW2ebceN96XuKVS81f5RafUzfZ78PtVaeAQAAAM5hV7CWAKMHJpmXaz0Y6QFKN46tIKavlxqZ+/btL4f3x6zqbO2zalWYlHVyBseCqgp0Xr++uDWu1q9rNW5cq/bcQ6C87r1mTu9rdk61fq85U3u679zHmiVzxmBtPNv0nzGZXzWqv77Pul99XNSa/dp996bWz33o8wAAAADO4U6wlnBjfIwBSg87okKaWYBSYUzMxkUFJhWOzGqszOrElj7HumUVMJUKdMZ9RJ9b4yoIKrNzyOt+zmMP6XHWU+1hrNGtxmTNXK+zG2uW2bj+PqrGeCbjmqteop9BjTt2b/LI69l9AAAAADi13T8FHfVQJLJGQo++1uxaVEBSYcu41jGrNbf0mXqzOvedQ/U7hj7R5477KqmXur2/cc89QIrVflY1utUZ5X0Pr8aaZTyP2bmt+hjXXPUSfeysRmw5XwAAAIBzOGuwlvVnfxFXjwpIVjVmZnViS595Pesjj2PnUIFOBVLdluAntdND76/3FT1kmo0vW8Kl1RnlfXqtffSa3fi9yLjea6z6GNdc9RJ97JZ7UzVn9wEAAADg1J7EX6yNVjVmVmtu6XMWEG1xLNDJtXyWMRWIjWFTXe/99b5iDKRW+6lexhrd6ozyvgdrvfdu/F7Mzm3Vx7iPVS/R153VGFXN2X0AAAAAOLWzBmtbQqBY1ZhZBTVb+tyy35nax33r55HX47jUS91+vc+LMZAa35fsIX/FdexMV2dUfVQwtTqP9Navz0Kv1b0d+66a47jxrLbcm6pZ/QMAAACc08mCtWNBS4KgHoZkzrt3l//NXdWYWdXZ0meFOT34iez/8vLjt3d3Vc1xH7O9jdeqZq71/npfkXm9r6o5O+OsNe6/y34ybryveZ/7Xb3NauSzrP/Ywdr4Pcv++7U6pz438nndm6rZzxsAAADgXO4EawlRZo8KLxKA9ECojMFQJFSp+T1wmdXp4ciqxsqszkP6zLXeyxjmjCrQ+fDht8NaNW8Mi0pfP2Ourj4f5vX+xr7GQCqqbq2V19fXfx6e+/mO0tO/Y48Ha1HXqkb6yud9b6k1nmH1NvYx7qN6yZp57nvpey3H7k3V7P0DAAAAnMutYA0AAAAA2EawBgAAAAA7CNYAAAAAYAfBGgAAAADsIFgDAAAAgB0EawAAAACwg2ANAAAAAHYQrAEAAADADoI1AAAAAHiwm5t/ANWgbMAKi8wYAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-30, 0, 1925, 1029" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALxSURBVDhPbZFrTJJRGMfJ1oc+14f6ZFtbTU2Iy5Q0BTTY0OYtE1HRUClKRc3Uhllm5pVMs9IUzEtmXiZWXtCMXObMvC2vldoyS5yYF0AzJZ9e4EVH87f9t7P3fX7/c84OZicOmx/ab0sg5diRiLLwYD+lIJSjjuRxplkeLnHIv73o2M4EsP0q+KGhmoSYcI1iWL6pnnwL6ol2WP4ih7aqB4t0Rzs5UrIHHTeFxw2pvpl4fTP5qmBG87UDlsdk+iyNNm+lT1aqZVDs61BlG6qDA4VOc9rgBYf87W+r1CyNtYA4Owkay+6aFLwoEYEbg7qAnGIfqhpg0hlDaSmpwA3iQtfL4rW5wUYYaCnRS4sjTSYlP3qkEB3KjkJVA+yzPt8jwiIgKCBINdMn3RpWj7fDQGuZft3bKIEl5EqtlXkgCGblo6oBpjN1Jj3x8irb22t++HX5b2PBu/p8SIm9oF83l9+BptIseF6cDrF8Timq6p9tV86teE2G8BIUZgoXprprtcaC/yNKFMBEZxXEXeSIUN1A9HnOuHKwYUdJl8nOGuhuKIScpGgYkZeDvyfTF1UN+Li5uJ9xcf7WXldkIi5/agV51T24HccHSZYQrgm4uispkVMfQNVtkI821UWijaVRGUy9r9UXzH1sgMyEMHj2MBlqHqXAz14peLue6kIVU5ACM5Y7U6mZ7IDpnjpoeZKtL1H01SNP+hjG2ivgRgx/weoYVooq2yCyuQWWOII7QfsTH8lfHX5Toe2sL0Ceyxee3k9SS0TCKTc6RUG0xq/YMH20ljhSrlE0O3LUMhVLpqiceAngEHQF3P1CfmWmZ6hicFiVGI9VsiwtZtm0k4MFJIImj4hfJ7kHAoF6egVxD+oKcCSG17pOJHoGA9GDqw/BLRCQYcUQmQivbAjL5/D4uTQcdj6XRFgjuPqDFZnar9tcV7Ab78ictw+I2pKNiSDZfpbgrce9HGkfZE1N62Jx8SwrJklznO4FFnhyDQaDwfwDb/XrcmjdftIAAAAASUVORK5CYII=" InformativeScreenshot="8fbcb7602df59475c715502512d1cdcb.jpg" Selector="&lt;html app='msedge.exe' title='Test_for_build [Jenkins]' /&gt;" Title="Test_for_build [Jenkins]" Url="http://localhost:8080/me/my-views/view/all/job/Test_for_build/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Capturing Output.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="731.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Capturing Output.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+  </Sequence>
+</Activity>

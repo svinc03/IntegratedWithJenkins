@@ -1,0 +1,237 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Capturing_Output" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="869.6,2576.8" sap2010:WorkflowViewState.IdRef="Capturing_Output_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/credentials" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>CredentialManagement</x:String>
+      <x:String>UiPath.Credentials.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>CredentialManagement</AssemblyReference>
+      <AssemblyReference>UiPath.Credentials.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Capturing_Output" sap:VirtualizedContainerService.HintSize="793.6,2512" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Build" />
+      <Variable x:TypeArguments="x:String" Name="ImageFIlePath" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Build" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Test_for_build [Jenkins]" sap:VirtualizedContainerService.HintSize="731.2,2400" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsCVEnabled="False" ScopeGuid="7d163b03-cce7-4a72-8c40-d381178edf10" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="697.6,2143.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="ss:SecureString" Name="EmailPwd" />
+              <Variable x:TypeArguments="x:String" Name="EmailUser" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Oct 11, 2023, 10:20 AM'" sap:VirtualizedContainerService.HintSize="635.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7d163b03-cce7-4a72-8c40-d381178edf10" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://localhost:8080/me/my-views/view/all/job/Test_for_build/" CvTextArea="48, 836, 150, 16" CvTextArgument="Oct 11, 2023, 10:20 AM" CvType="Text" DesignTimeRectangle="27, 806, 20, 20" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Oct 11, 2023, 10:20 AM'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='*' tableRow='2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Oct 11, 2023, 10:20 AM          ' type='' tag='A' class='model-link inside build-link' check:innerText='Oct 11, 2023, 10:20 AM' /&gt;" Guid="d662fccc-8972-4353-9bc9-c46052d1ce42" InformativeScreenshot="1c57e5cda6e91d3ca0de1222a16bfba9.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Test_for_build [Jenkins]' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="24, 741, 405, 48" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='search' tag='INPUT' class='jenkins-search__input' aaname='' /&gt;" ImageBase64="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" SearchSteps="Selector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Console Output'" sap:VirtualizedContainerService.HintSize="635.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7d163b03-cce7-4a72-8c40-d381178edf10" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://localhost:8080/me/my-views/view/all/job/Test_for_build/19/" DesignTimeRectangle="35, 372, 404, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Console Output'" FullSelectorArgument="&lt;webctrl aaname='Console Output' parentid='tasks' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Console Output' parentid='tasks' tag='A' type='' class='task-link ' check:innerText='Console Output' /&gt;" Guid="cc8b3a8d-0833-47b8-a1d2-1c4c6f8e86fa" ImageBase64="" InformativeScreenshot="d901b1f4d9b4791e004fe933b08b7c28.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Test_for_build #19 [Jenkins]' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="635.2,136.8" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="end" KeyModifiers="Ctrl" SpecialKey="True">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="37c1789c-b46b-44a0-8bf2-d54dc622d5da">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="635.2,870.4" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="601.6,784" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="539.2,672" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="Build Details.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="505.6,402.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:String" Name="Build" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;B2&quot;)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="443.2,160" sap2010:WorkflowViewState.IdRef="ReadCellValueX_1">
+                              <ueab:ReadCellValueX.SaveTo>
+                                <OutArgument x:TypeArguments="x:String">[Build]</OutArgument>
+                              </ueab:ReadCellValueX.SaveTo>
+                            </ueab:ReadCellValueX>
+                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="443.2,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[Build]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+            </ueab:ExcelProcessScopeX>
+            <uix:NTakeScreenshot DisplayName="Take Screenshot 'Chrome Legacy Window'" FileName="[&quot;H:\UiPath2023versions\IntegratedWithJenkins\.screenshots\&quot;+Build+&quot;.png&quot;]" FileNameMode="DateTime" sap:VirtualizedContainerService.HintSize="635.2,233.6" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" ScopeIdentifier="7d163b03-cce7-4a72-8c40-d381178edf10" Version="V3">
+              <uix:NTakeScreenshot.SavedTo>
+                <OutArgument x:TypeArguments="x:String">[ImageFIlePath]</OutArgument>
+              </uix:NTakeScreenshot.SavedTo>
+              <uix:NTakeScreenshot.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="14, 98, 1898, 917" DesignTimeScaleFactor="1.25" FriendlyName="'Chrome Legacy Window'" FullSelectorArgument="&lt;wnd cls='Chrome_RenderWidgetHostHWND' title='Chrome Legacy Window' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Chrome_RenderWidgetHostHWND' title='Chrome Legacy Window' check:text='Chrome Legacy Window' /&gt;" Guid="399be610-6e0c-4265-9e20-6c5cd8c6169f" InformativeScreenshot="11c33b48dabcbc1f0685bf6358df6dfa.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Test_for_build #19 Console [Jenkins] and 13 more pages - Persona*' /&gt;" SearchSteps="Selector, FuzzySelector" SelectionStrategy="UIA" Version="V2" Visibility="Interactive" />
+              </uix:NTakeScreenshot.Target>
+            </uix:NTakeScreenshot>
+            <p:GetSecureCredential CredentialType="Generic" DisplayName="Get Secure Credentials" sap:VirtualizedContainerService.HintSize="635.2,80.8" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[EmailPwd]" PersistanceType="Enterprise" Target="RejilaGmail" Username="[EmailUser]" />
+            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="Job completed and please check the KPI results" DisplayName="Send SMTP Mail Message" Email="[EmailUser]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="635.2,151.2" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Port="587" SecureConnection="Auto" SecurePassword="[EmailPwd]" Server="smtp.gmail.com" Subject="KPI Results" To="rejila.sprw@gmail.com">
+              <ui:SendMail.Files>
+                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                  <InArgument x:TypeArguments="x:String">[ImageFIlePath]</InArgument>
+                </scg:List>
+              </ui:SendMail.Files>
+            </ui:SendMail>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-30, 0, 1925, 1029" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALxSURBVDhPbZFrTJJRGMfJ1oc+14f6ZFtbTU2Iy5Q0BTTY0OYtE1HRUClKRc3Uhllm5pVMs9IUzEtmXiZWXtCMXObMvC2vldoyS5yYF0AzJZ9e4EVH87f9t7P3fX7/c84OZicOmx/ab0sg5diRiLLwYD+lIJSjjuRxplkeLnHIv73o2M4EsP0q+KGhmoSYcI1iWL6pnnwL6ol2WP4ih7aqB4t0Rzs5UrIHHTeFxw2pvpl4fTP5qmBG87UDlsdk+iyNNm+lT1aqZVDs61BlG6qDA4VOc9rgBYf87W+r1CyNtYA4Owkay+6aFLwoEYEbg7qAnGIfqhpg0hlDaSmpwA3iQtfL4rW5wUYYaCnRS4sjTSYlP3qkEB3KjkJVA+yzPt8jwiIgKCBINdMn3RpWj7fDQGuZft3bKIEl5EqtlXkgCGblo6oBpjN1Jj3x8irb22t++HX5b2PBu/p8SIm9oF83l9+BptIseF6cDrF8Timq6p9tV86teE2G8BIUZgoXprprtcaC/yNKFMBEZxXEXeSIUN1A9HnOuHKwYUdJl8nOGuhuKIScpGgYkZeDvyfTF1UN+Li5uJ9xcf7WXldkIi5/agV51T24HccHSZYQrgm4uispkVMfQNVtkI821UWijaVRGUy9r9UXzH1sgMyEMHj2MBlqHqXAz14peLue6kIVU5ACM5Y7U6mZ7IDpnjpoeZKtL1H01SNP+hjG2ivgRgx/weoYVooq2yCyuQWWOII7QfsTH8lfHX5Toe2sL0Ceyxee3k9SS0TCKTc6RUG0xq/YMH20ljhSrlE0O3LUMhVLpqiceAngEHQF3P1CfmWmZ6hicFiVGI9VsiwtZtm0k4MFJIImj4hfJ7kHAoF6egVxD+oKcCSG17pOJHoGA9GDqw/BLRCQYcUQmQivbAjL5/D4uTQcdj6XRFgjuPqDFZnar9tcV7Ab78ictw+I2pKNiSDZfpbgrce9HGkfZE1N62Jx8SwrJklznO4FFnhyDQaDwfwDb/XrcmjdftIAAAAASUVORK5CYII=" InformativeScreenshot="1b4910b76ecc2e62d0a0d9caaebce3b6.jpg" Selector="&lt;html app='msedge.exe' title='Test_for_build [Jenkins]' /&gt;" Title="Test_for_build [Jenkins]" Url="http://localhost:8080/me/my-views/view/all/job/Test_for_build/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
